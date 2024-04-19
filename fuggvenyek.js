@@ -18,11 +18,11 @@ export function tablazatLetrehoz(lista) {
 export function megjelenit(txt) {
   const ELEM = $("#feladat_1");
   ELEM.html(txt);
-  //return txt;
 }
 export function osszead(lista) {
-    
-
-
-    
+  let ossz_tomeg = 0;
+  for (let index = 0; index < lista.length; index++) {
+    ossz_tomeg += lista[index].tomeg;
+  } 
+  return ossz_tomeg;
 }
