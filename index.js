@@ -3,20 +3,13 @@ import { GYUMOLCSOK } from "./adatok.js";
 const vasarolt = [];
 
 // 1. feladat
-function letrehozTablazat() {
-
-}
+function letrehozTablazat() {}
 
 // 2. feladat
-function osszesit() {
-}
+function osszesit() {}
 
 // 3. feladat
-function vasarol(zoldseg) {
-
-}
+function vasarol(zoldseg) {}
 
 // 4. feladat
-function torolEsemeny() {
-
-}
+function torolEsemeny() {}
