@@ -5,7 +5,7 @@ export function tablazatLetrehoz(lista) {
     txt += "<tbody>";
     lista.forEach((elem, index) => {
       txt += `<tr>
-          <td>${elem.nev}</td>
+          <td id="${index}">${elem.nev}</td>
           <td>${elem.tomeg}</td>
           <td>${elem.ar}</td>
           </tr>`;
