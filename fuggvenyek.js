@@ -26,3 +26,8 @@ export function tablazatLetrehoz(lista) {
     } 
     return ossz_tomeg;
   }
+  export function torol(lista){
+    console.log(lista.length);
+    lista.splice(0, lista.length);
+    return lista;
+}

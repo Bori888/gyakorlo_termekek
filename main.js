@@ -1,4 +1,4 @@
-import { tablazatLetrehoz, megjelenit, osszead } from "./fuggvenyek.js";
+import { tablazatLetrehoz, megjelenit, osszead ,torol} from "./fuggvenyek.js";
 import { GYUMOLCSOK } from "./adatok.js";
 
 let txt = tablazatLetrehoz(GYUMOLCSOK);
@@ -10,6 +10,7 @@ const ELEM = $("#feladat_2");
 ELEM.html("A gyümölcsök súlya összesen: "+ ossz_tomeg+ " kg");
 
 //előszö megfog aztán rá teszem a li tegre az eseményt
+
 const trELEM = $("#feladat_1 table tbody tr");
 trELEM.on("click" , function (event) {
     console.log(event.target.id)
@@ -29,6 +30,17 @@ trELEM.on("click" , function (event) {
 //Meg van az előző feladatban az index most ezt ki kell irni az ehez tartozo elemet legalulra
 const idELEM = $("#feladat_3");
 const kivalsztott = [];
+
+//töröl 
+torolEsemeny();
+
+function torolEsemeny(){
+    const torolELEM =$("#torles");
+    torolELEM.on("click", function(event){
+        const LISTA = torol(kivalsztott);
+        ;
+    });
+}
 
 
     
