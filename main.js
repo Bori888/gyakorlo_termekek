@@ -38,6 +38,7 @@ function torolEsemeny(){
     const torolELEM =$("#torles");
     torolELEM.on("click", function(event){
         const LISTA = torol(kivalsztott);
+        idELEM.empty();
         ;
     });
 }
